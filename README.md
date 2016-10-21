@@ -13,10 +13,10 @@ Social Strata will help people get in touch with their condominium community, la
 We built it using Ionic, AngularJS in our front end and we're using Ruby on Rails on our backend.
 
 ### Who built it?
-[@pablohpsilva](https://github.com/pablohpsilva) - Frontend developer
-[@vilaboim](https://github.com/lucasvilaboim) - Frontend developer
-[@martinstiago](https://github.com/tiagomartinsaraujo) - Backend developer
-[@garciafsouza](https://devpost.com/garciafsouza) - Designer
+* [@pablohpsilva](https://github.com/pablohpsilva) - Frontend developer
+* [@vilaboim](https://github.com/lucasvilaboim) - Frontend developer
+* [@martinstiago](https://github.com/tiagomartinsaraujo) - Backend developer
+* [@garciafsouza](https://devpost.com/garciafsouza) - Designer
 
 ### What it looks like?
 ![1](screenshots/1.jpg)
