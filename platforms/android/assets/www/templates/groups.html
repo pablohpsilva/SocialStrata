@@ -1,0 +1,74 @@
+<ion-view view-title="Groups">
+  <ion-content >
+    <ion-list show-delete="false" can-swipe="true">
+
+      <!--<ion-item class="item-clear" collection-repeat="item in groupscontroller.items track by $index" ng-show="groupscontroller.items.length" style="border: none; width: 100%; padding: 0;">-->
+      <ion-item class="item-clear">
+
+        <div class="list card card-clean">
+          <a class="item item-avatar item-avatar-groups item-avatar-groups-lostandfound" href="#/tab/lost-found">
+            <div class="strata-item-content strata-item-fixed">
+              <h2>Lost and found</h2>
+              <p class="strata-item-group-paragraph">
+                Lorem ipsum dolor sit amet
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="list card card-clean">
+          <a class="item item-avatar item-avatar-groups item-avatar-groups-booking" href="#">
+            <div class="strata-item-content strata-item-fixed">
+              <h2>Public space booking</h2>
+              <p class="strata-item-group-paragraph">
+                Lorem ipsum dolor sit amet
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="list card card-clean">
+          <a class="item item-avatar item-avatar-groups item-avatar-groups-notices" href="#/tab/public-notices">
+            <div class="strata-item-content strata-item-fixed">
+              <h2>Public notices</h2>
+              <p class="strata-item-group-paragraph">
+                Lorem ipsum dolor sit amet
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="list card card-clean">
+          <a class="item item-avatar item-avatar-groups item-avatar-groups-proposals" href="#">
+            <div class="strata-item-content strata-item-fixed">
+              <h2>Project proposals</h2>
+              <p class="strata-item-group-paragraph">
+                Lorem ipsum dolor sit amet
+              </p>
+            </div>
+          </a>
+        </div>
+
+      </ion-item>
+
+      <div class="list card card-clean" collection-repeat="group in groups">
+        <a class="item item-avatar item-avatar-groups item-avatar-groups-general" href="#/tab/posts/{{ group.id }}">
+          <div class="strata-item-content strata-item-archive">
+            <h2>{{ group.name }}</h2>
+            <p class="strata-item-group-paragraph">
+              {{ group.description }}
+            </p>
+          </div>
+        </a>
+      </div>
+
+    </ion-list>
+  </ion-content>
+
+  <ion-footer-bar align-title="left" class="bar-balanced bar-strata-balanced">
+    <a href="" class="button button-clear" ng-click="modal.show()" style="">
+      <div class="strata-bottom-button-plus-clear"></div>
+    </a>
+  </ion-footer-bar>
+
+</ion-view>

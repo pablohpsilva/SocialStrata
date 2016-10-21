@@ -1,0 +1,30 @@
+<ion-view view-title="Services">
+  <ion-content>
+    <ion-list show-delete="false" can-swipe="true">
+      <ion-item class="item-clear item-service" ng-repeat="service in services" ng-click="toggleService(service)" ng-class="{uncollapsed: isServiceShown(service)}">
+        <div class="list card card-clean">
+          <div class="item item-avatar item-avatar-groups item-avatar-services">
+            <div class="strata-item-content strata-item-fixed">
+              <h2>{{ service.name }}</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapse">
+          <div class="list card list-stores card-clean" ng-repeat="store in service.stores">
+            <div class="item item-avatar item-avatar-groups">
+              <div class="strata-item-content strata-item-fixed">
+                <a href="#/tab/service/{{ store.id }}">
+                  <h2>{{ store.name }}</h2>
+                  <p class="strata-item-group-paragraph">
+                    {{ store.description }}
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

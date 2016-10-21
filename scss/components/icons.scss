@@ -1,0 +1,80 @@
+.strata-ios-groups,
+.strata-ios-chats,
+.strata-ios-services,
+.strata-ios-maintenance,
+.strata-ios-groups-active,
+.strata-ios-chats-active,
+.strata-ios-services-active,
+.strata-ios-maintenance-active,
+.strata-ios-back {
+  &:before {
+    display: block;
+    width: 100%;
+    height: 36px;
+    content: ".";
+    text-indent: 9999px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.strata-ios-groups {
+  &:before {
+    background-image: url("../img/icons/strata-ios-groups-tab.svg");
+  }
+}
+
+.strata-ios-groups-active {
+  &:before {
+    background-image: url("../img/icons/strata-ios-groups-tab-active.svg");
+  }
+}
+
+.strata-ios-chats {
+  &:before {
+    background-image: url("../img/icons/strata-ios-chat-tab.svg");
+  }
+}
+
+.strata-ios-chats-active {
+  &:before {
+    background-image: url("../img/icons/strata-ios-chat-tab-active.svg");
+  }
+}
+
+.strata-ios-services {
+  &:before {
+    background-image: url("../img/icons/strata-ios-services-tab.svg");
+  }
+}
+
+.strata-ios-services-active {
+  &:before {
+    background-image: url("../img/icons/strata-ios-services-tab-active.svg");
+  }
+}
+
+.strata-ios-maintenance {
+  &:before {
+    background-image: url("../img/icons/strata-ios-maintenance-tab.svg");
+  }
+}
+
+.strata-ios-maintenance-active {
+  &:before {
+    background-image: url("../img/icons/strata-ios-maintenance-tab-active.svg");
+  }
+}
+
+.back-button {
+  .back-text {
+    display: none !important;
+  }
+}
+
+.strata-ios-back {
+  &:before {
+    width: 30px;
+    background-image: url("../img/icons/strata-ios-back.svg");
+  }
+}

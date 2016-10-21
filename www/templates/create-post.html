@@ -1,0 +1,29 @@
+<ion-modal-view>
+
+  <ion-header-bar class="bar bar-header bar-clear" style="color: Green;">
+    <button class="button button-clear button-primary" ng-click="modal.hide()" style="color: #000;">
+      <img src="../img/icons/strata-ios-back.svg" alt="" style="    height: 20px;margin: 10px 20px; margin-left: 0;">
+    </button>
+    <h1 class="title" style="font-family: Montserrat, sans-serif; font-size: 14px; color: #89949F;">CREATE POST</h1>
+    <!--<button class="button button-clear button-primary" ng-click="modal.hide()" style="color: #000;">Cancel</button>-->
+  </ion-header-bar>
+
+  <ion-content class="padding" scroll="false">
+    <div class="list">
+
+      <label class="item item-input strata-item-input" style="border: none;">
+        <!--<span class="input-label">Group Description</span>-->
+        <!--<input ng-model="newUser.lastName" type="text">-->
+        <textarea class="strata-item-textarea" type="text" placeholder="Post on group"></textarea>
+      </label>
+
+    </div>
+  </ion-content>
+
+  <ion-footer-bar align-title="left" class="bar-balanced bar-strata-balanced">
+    <a href="" class="button button-clear" ng-click="modal.show()" style="">
+      <div class="strata-bottom-button-check-clear"></div>
+    </a>
+  </ion-footer-bar>
+
+</ion-modal-view>

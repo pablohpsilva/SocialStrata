@@ -1,0 +1,18 @@
+<ion-view view-title="Chat">
+  <ion-content>
+    <div class="card-chat-container">
+      <div class="list card card-clean card-chat" ng-class="( message.sender ? 'card-chat-right' : '' )" ng-repeat="message in messages">
+        <img class="avatar" ng-src="{{ message.avatar }}" />
+        <p class="strata-chat-paragraph">
+          {{ message.text }}
+        </p>
+      </div>
+    </div>
+  </ion-content>
+
+  <div class="send-chat">
+    <input class="send-chat-input" type="text" placeholder="Type a message" />
+    <button class="send-chat-btn"></button>
+  </div>
+
+</ion-view>

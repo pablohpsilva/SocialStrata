@@ -1,0 +1,24 @@
+.bar.bar-header {
+  padding: 17px;
+  padding-top: 10px;
+  text-align: center;
+  background: #fff;
+
+  .title {
+    max-width: 144px;
+    height: 60px;
+    margin: 0 auto;
+    text-indent: -9999px;
+    background: transparent url("../img/logo-color.svg") no-repeat center;
+  }
+}
+
+.tab-nav.tabs {
+  background: #fff;
+}
+
+.back-button {
+  .back-text {
+    display: none !important;
+  }
+}

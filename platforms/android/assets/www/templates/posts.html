@@ -1,0 +1,43 @@
+<ion-view view-title="{{title}}">
+  <ion-content>
+    <ion-list can-swipe="true">
+
+      <ion-item style="border: none;">
+        <div class="list group-list">
+          <a class="item item-thumbnail-center--notopmargin" href="#" style="">
+            <div class="strata-post-icon"></div>
+          </a>
+          <h2>{{ name }}</h2>
+          <p class="item-description">
+            {{description}}
+          </p>
+          <hr style=""/>
+        </div>
+      </ion-item>
+
+      <div class="list group-list group-list--spaced" collection-repeat="group in groups">
+        <a class="item item-thumbnail-center--notopmargin item-thumbnail-center--rounded" href="#" style="">
+          <div class="strata-post-user-default-icon"></div>
+        </a>
+        <p class="item-title">
+          Pablo Henrique <span>Silva</span>
+        </p>
+        <p class="item-description">
+          {{description}}
+        </p>
+        <p class="item-description--left">
+          <a href="#/tab/group/1/post/1/comment" class="">5 Comments</a>
+        </p>
+        <hr style=""/>
+      </div>
+
+    </ion-list>
+  </ion-content>
+
+  <ion-footer-bar align-title="left" class="bar-balanced bar-strata-balanced">
+    <a href="" class="button button-clear" ng-click="modal.show()" style="">
+      <div class="strata-bottom-button-plus-clear"></div>
+    </a>
+  </ion-footer-bar>
+
+</ion-view>

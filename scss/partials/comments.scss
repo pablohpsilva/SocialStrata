@@ -1,0 +1,27 @@
+.strata-bar-clear-chat {
+  height: 56px;
+
+  .strata-chat-wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0px 15px;
+    border-bottom: 2px solid #EBEBEB;
+    margin: 0 14px 10px 14px;
+  }
+
+  .strata-btn-send {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    height: 20px;
+  }
+
+  .strata-chat-input {
+    width: 100%;
+    padding-right: 30px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 200;
+  }
+
+}

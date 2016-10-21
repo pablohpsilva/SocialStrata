@@ -1,0 +1,64 @@
+.strata-login-form-group {
+  width: 100%;
+  border-radius: 4px;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  position: relative;
+  margin-bottom: 20px;
+
+  &:before {
+    display: block;
+    content: '.';
+    text-indent: 9999px;
+    background: url("../img/icons/strata-ios-avatar-login.svg") no-repeat;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    border-radius: 0px;
+    height: 20px;
+    width: 20px;
+    color: #fff;
+  }
+
+  &.input-username {
+    @extend .strata-login-form-group;
+
+    &:before {
+      background: url("../img/icons/strata-ios-avatar-login.svg") no-repeat;
+    }
+  }
+
+  &.input-password {
+    @extend .strata-login-form-group;
+
+    &:before {
+      background: url("../img/icons/strata-ios-locker-login.svg") no-repeat;
+      left: 12px;
+    }
+  }
+
+}
+
+input.strata-login-input {
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  border-radius: 0;
+  position: relative;
+  font-family: Montserrat, sans-serif;
+  padding-left: 40px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.login-logo {
+  background: url('../img/logo-white.svg') no-repeat center;
+  height: 55px;
+}
+
+.strata-login-button-full {
+  border-radius: 4px;
+  height: 60px;
+  color: #95A5A6;
+  padding-top: 8px;
+}

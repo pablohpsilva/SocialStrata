@@ -1,0 +1,17 @@
+<ion-view view-title="Chats">
+  <ion-content>
+    <ion-list show-delete="false" can-swipe="true">
+      <div class="list card card-clean" ng-repeat="user in users">
+        <a class="item item-avatar item-avatar-groups item-avatar-chats" href="#/tab/chat/{{ user.id }}">
+          <img class="avatar" ng-src="{{ user.avatar }}" />
+          <div class="strata-item-content strata-item-fixed">
+            <h2>{{ user.name }} <strong>{{ user.lastName }}</strong></h2>
+            <p class="strata-item-group-paragraph">
+              {{ user.telephone }} | {{ user.apartment }}
+            </p>
+          </div>
+        </a>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

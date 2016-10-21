@@ -1,0 +1,214 @@
+.item-service {
+  max-height: 74px;
+  margin: 0;
+  overflow: hidden;
+
+  &.uncollapsed {
+    max-height: 10000px;
+    transition: max-height .4s ease-in-out;
+
+    > .list {
+      background-color: $primary-color;
+    }
+
+    .item {
+      background-color: $primary-color;
+    }
+
+    .strata-item-fixed {
+      border-color: $primary-color;
+
+      h2,
+      p {
+        color: #FFF;
+      }
+    }
+
+    .collapse {
+      background-color: #6bde9e;
+
+      .item {
+        background-color: #6bde9e;
+      }
+
+      .card {
+        background: none;
+      }
+
+      .strata-item-content.strata-item-fixed {
+        border-right: 0;
+      }
+    }
+
+    &.item-service {
+      &:nth-child(1) {
+        .item-avatar.item-avatar-services {
+          &:before {
+            background-image: url("../img/icons/strata-ios-market-services-active.svg");
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        .item-avatar.item-avatar-services {
+          &:before {
+            background-image: url("../img/icons/strata-ios-transportation-services-active.svg");
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        .item-avatar.item-avatar-services {
+          &:before {
+            background-image: url("../img/icons/strata-ios-gardening-services-active.svg");
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        .item-avatar.item-avatar-services {
+          &:before {
+            background-image: url("../img/icons/strata-ios-cleaning-services-active.svg");
+          }
+        }
+      }
+
+      &:nth-child(5) {
+        .item-avatar.item-avatar-services {
+          &:before {
+            background-image: url("../img/icons/strata-ios-security-services-active.svg");
+          }
+        }
+      }
+    }
+
+    .item-avatar {
+      &.item-avatar-services {
+        .strata-item-fixed {
+          padding: 28px 0 26px 10px;
+        }
+      }
+    }
+  }
+}
+
+.item-service {
+  &:nth-of-type(1) {
+    .item-avatar.item-avatar-services {
+      &:before {
+        width: 30px;
+        height: 47px;
+        background-image: url("../img/icons/strata-ios-market-services.svg");
+      }
+    }
+  }
+
+  &:nth-of-type(2) {
+    .item-avatar.item-avatar-services {
+      &:before {
+        width: 30px;
+        height: 47px;
+        background-image: url("../img/icons/strata-ios-transportation-services.svg");
+      }
+    }
+  }
+
+  &:nth-of-type(3) {
+    .item-avatar.item-avatar-services {
+      &:before {
+        width: 30px;
+        height: 47px;
+        background-image: url("../img/icons/strata-ios-gardening-services.svg");
+      }
+    }
+  }
+
+  &:nth-of-type(4) {
+    .item-avatar.item-avatar-services {
+      &:before {
+        width: 30px;
+        height: 47px;
+        background-image: url("../img/icons/strata-ios-cleaning-services.svg");
+      }
+    }
+  }
+
+  &:nth-of-type(5) {
+    .item-avatar.item-avatar-services {
+      &:before {
+        width: 30px;
+        height: 47px;
+        background-image: url("../img/icons/strata-ios-security-services.svg");
+      }
+    }
+  }
+}
+
+.item-avatar {
+  &.item-avatar-services {
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    &:before {
+      position: absolute;
+      top: 13px;
+      left: 39px;
+      content: "";
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .strata-item-fixed {
+      padding: 28px 0 26px 10px;
+    }
+  }
+}
+
+.service-store-infos {
+  padding: 30px 15px;
+  text-align: center;
+
+  h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #89949f;
+  }
+
+  p {
+    color: $text-color;
+  }
+
+  .store-links {
+    margin-top: 20px;
+    text-align: center;
+    color: $text-color;
+
+    > a {
+      display: inline-block;
+      margin: 0 11px;
+      text-decoration: none;
+      text-indent: -9999px;
+      color: $text-color;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &.store-whatsapp {
+        width: 33px;
+        height: 33px;
+        background-image: url("../img/icons/strata-ios-message-innerservices.svg");
+      }
+
+      &.store-telephone {
+        width: 33px;
+        height: 33px;
+        background-image: url("../img/icons/strata-ios-phone-innerservices.svg");
+      }
+
+      &.store-email {
+        width: 47px;
+        height: 32px;
+        background-image: url("../img/icons/strata-ios-mail-innerservices.svg");
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.item-avatar {
+  &.item-avatar-groups {
+    padding: 0px 0px 0px 100px;
+
+    &.item-avatar-groups-maintenance {
+      position: relative;
+      &:before {
+        display: block;
+        content: '.';
+        text-indent: 9999px;
+        background: url("../img/icons/strata-ios-tool-maintenance.svg") no-repeat;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        border-radius: 0px;
+        height: 40px;
+        width: 40px;
+      }
+    }
+
+  }
+}

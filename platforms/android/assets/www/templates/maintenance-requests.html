@@ -1,0 +1,26 @@
+<ion-view view-title="Groups">
+  <ion-content >
+    <ion-list show-delete="false" can-swipe="true">
+
+      <div class="list card card-clean" collection-repeat="group in maintenances">
+        <a class="item item-avatar item-avatar-groups item-avatar-groups-maintenance"
+           href="#/tab/maintenance-request/{{group.id}}">
+          <div class="strata-item-content strata-item-fixed">
+            <h2>{{group.title}}</h2>
+            <p class="strata-item-group-paragraph">
+              {{group.description}}
+            </p>
+          </div>
+        </a>
+      </div>
+
+    </ion-list>
+  </ion-content>
+
+  <ion-footer-bar align-title="left" class="bar-balanced bar-strata-balanced">
+    <a href="" class="button button-clear" ng-click="modal.show()" style="">
+      <div class="strata-bottom-button-plus-clear"></div>
+    </a>
+  </ion-footer-bar>
+
+</ion-view>

@@ -1,0 +1,28 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-only">
+
+  <!-- Groups Tab -->
+  <ion-tab title="Groups" class="tabs-icon-only" icon-off="strata-ios-groups" icon-on="strata-ios-groups-active" href="#/tab/groups">
+    <ion-nav-view name="groups"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Chats Tab -->
+  <ion-tab title="Chats" icon-off="strata-ios-chats" icon-on="strata-ios-chats-active" href="#/tab/chats">
+    <ion-nav-view name="chats"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Services Tab -->
+  <ion-tab title="Service" icon-off="strata-ios-services" icon-on="strata-ios-services-active" href="#/tab/services">
+    <ion-nav-view name="services"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Maintenance Tab -->
+  <ion-tab title="Maintenance" icon-off="strata-ios-maintenance" icon-on="strata-ios-maintenance-active" href="#/tab/maintenance-requests">
+    <ion-nav-view name="maintenance-requests"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>
